@@ -443,7 +443,7 @@ The Action.Http element is not part of the Adaptive Cards SDK. This action is an
     public class CardResponse
     {
       public string Comment { get; set; }
-      public string CachedComments { get; set; }
+      public Newtonsoft.Json.Linq.JArray CachedComments { get; set; }
     }
     ```
 
