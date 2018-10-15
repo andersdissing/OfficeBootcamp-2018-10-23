@@ -16,19 +16,19 @@ This demo requires an Office 365 subscription with an active mailbox and a **Mic
 
 1. In the drop-down menu, choose **GitHub - Issue opened**.
 
-    ![Screenshot of GitHub - Issue opened card.](Images/Exercise1_02.png)
+    ![Screenshot of GitHub - Issue opened card.](../../Images/Exercise1_02.png)
 
 ## Modify a sample
 
 1. Edit the `activityTitle` element to surround it with two asterisks instead of none:
 
-    ![Screenshot of Microsoft Flow approval with title highlighted.](Images/Exercise1_03.png)
+    ![Screenshot of Microsoft Flow approval with title highlighted.](../../Images/Exercise1_03.png)
 
     >Note: You can use basic markdown formatting for text elements within the card.
 
 1. Open your browser and go to the [Training Content Issue 493](https://github.com/OfficeDev/TrainingContent/issues/493).
 
-    ![Screenshot of GitHub Training Content Issue 493.](Images/Exercise1_04.png)
+    ![Screenshot of GitHub Training Content Issue 493.](../../Images/Exercise1_04.png)
 
 1. Replace the JSON in the MessageCard Playground app with the following code:
 
@@ -69,19 +69,19 @@ This demo requires an Office 365 subscription with an active mailbox and a **Mic
     }
     ````
 
-    ![Screenshot of JSON and GitHub - Issue opened card side by side.](Images/Exercise1_05.png)
+    ![Screenshot of JSON and GitHub - Issue opened card side by side.](../../Images/Exercise1_05.png)
 
     The message card now reflects a different GitHub issue. This demonstrates how your application can change the information in a card and send it to a user or group.
 
 1. Select the **View in GitHub** button to see the issue.
 
-    ![Screenshot of action message in MessageCard Playground app.](Images/Exercise1_06.png)
+    ![Screenshot of action message in MessageCard Playground app.](../../Images/Exercise1_06.png)
 
     Actions in the MessageCard Playground app are disabled, only prompting the information that you provided in the card. However, you can send the card to your Office 365 email account to view the card and interact with its actions.
 
 1. Select the **Send via Email** button to send the card to yourself in email. If you are not logged in to the MessageCard Playground it will prompt you to log in and then ask for your consent.  When consent is given the MessageCard Playground page will reload and you will need to load the sample again.
 
-    ![Screenshot of test message card in email.](Images/Exercise1_07.png)
+    ![Screenshot of test message card in email.](../../Images/Exercise1_07.png)
 
 1. Select the **View in GitHub** button and see that your browser opens and the original GitHub issue page is displayed.
 
