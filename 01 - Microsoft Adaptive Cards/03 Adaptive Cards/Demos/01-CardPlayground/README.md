@@ -18,7 +18,7 @@ This demo uses PowerShell. It also requires an Office 365 subscription with an a
 
 1. Choose **Outlook Actionable Messages (Preview)** from the dropdown. Notice that a warning message is display above the card preview. Also notice that the Submit button is not displayed.
 
-    ![Input Form sample previewed with Outlook Actionable Messages](../../Images/InputForOutlookPreview.png)
+    ![Input Form sample previewed with Outlook Actionable Messages](../../Images/InputFormOutlookPreview.png)
 
 1. Point out that Action.Submit is not supported by Outlook. Outlook implemented an action (Action.Http) this is not supported in other hosts. Action.Http is discussed later in the module.
 
@@ -36,8 +36,8 @@ Open the browser to the [Card Playground](https://messagecardplayground.azureweb
 1. You will be prompted to log in. If this is the first time using the Message Card Playground, you will be prompted for consent to send messages as you.
 1. After log in and consent, a confirmation message will display.
 
-    ![Send Confirmation](../../Images/Images/SendConfirmation.png)
+    ![Send Confirmation](../../Images/SendConfirmation.png)
 
 1. Open Outlook. Select the message titled "Card Playground Test Card." The message will contain the card, footer text with links about the playground and card documentation, and will show the JSON payload of the card.
 
-    ![Adaptive Card in Outlook](../../Images/Images/AdaptiveCardInOutlook.png)
+    ![Adaptive Card in Outlook](../../Images/AdaptiveCardInOutlook.png)
