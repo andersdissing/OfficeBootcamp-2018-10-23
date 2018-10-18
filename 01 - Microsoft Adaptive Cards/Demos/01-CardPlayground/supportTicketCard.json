@@ -1,6 +1,7 @@
 {
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "type": "AdaptiveCard",
+  "summary": "Your Subject Goes Here",
   "version": "1.0",
   "body": [
     {

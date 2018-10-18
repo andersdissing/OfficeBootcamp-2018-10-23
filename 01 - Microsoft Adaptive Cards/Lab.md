@@ -405,7 +405,7 @@ The Action.Http element is not part of the Adaptive Cards SDK. This action is an
 
       public override string Type { get; set; } = TypeName;
 
-      [JsonProperty("Url", Required=Required.Always)]
+      [JsonProperty("Url", Required = Required.Always)]
       public string UrlString { get; set; }
 
       [JsonProperty(Required = Required.Always)]
@@ -415,11 +415,8 @@ The Action.Http element is not part of the Adaptive Cards SDK. This action is an
       [JsonRequired]
       public string Body { get; set; }
 
-      public StringDictionary Headers { get; set; }
-
       public AdaptiveHttpAction()
       {
-        Headers = new StringDictionary();
       }
     }
     ```
@@ -433,18 +430,26 @@ The Action.Http element is not part of the Adaptive Cards SDK. This action is an
 1. In the **Comment.cs** class, replace the class definition with the following:
 
     ```csharp
-    public class Comment
-    {
-      public string ActionPerformer { get; set; }
-      public DateTime CommentDate { get; set; }
-      public string CommentText { get; set; }
-    }
+	public class Comment
+	{
+	  [JsonProperty("ActionPerformer")]
+	  public string ActionPerformer { get; set; }
 
-    public class CardResponse
-    {
-      public string Comment { get; set; }
-      public Newtonsoft.Json.Linq.JArray CachedComments { get; set; }
-    }
+	  [JsonProperty("CommentDate")]
+	  public DateTimeOffset CommentDate { get; set; }
+
+	  [JsonProperty("CommentText")]
+	  public string CommentText { get; set; }
+	}
+
+	public class CardResponse
+	{
+	  [JsonProperty("cachedComments")]
+	  public JArray CachedComents { get; set; }
+
+	  [JsonProperty("comment")]
+	  public string Comment { get; set; }
+	}
     ```
 
 ### Add base card definition

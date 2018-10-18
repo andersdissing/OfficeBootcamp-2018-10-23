@@ -69,12 +69,6 @@
                 new AdaptiveHttpAction()
                 {
                   Method ="POST",
-                  Headers = new System.Collections.Specialized.StringDictionary()
-                  {
-                    {
-                      "Content-Type","application/json"
-                    }
-                  },
                   Title ="OK",
                   UrlString =$"{WebServiceHost}/api/Ticket",
                   Body = httpBody.ToString()
