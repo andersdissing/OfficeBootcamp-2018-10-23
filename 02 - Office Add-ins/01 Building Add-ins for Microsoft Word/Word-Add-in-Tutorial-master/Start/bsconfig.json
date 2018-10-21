@@ -1,17 +1,17 @@
 {
     "ui": {
-        "port": 3000
+      "port": 3000
     },
     "server": {
-        "routes": {
-            "/node_modules": "node_modules"
-        }
+      "routes": {
+        "/node_modules": "node_modules"
+      }
     },
     "https": {
-        "key": "./certs/server.key",
-        "cert": "./certs/server.crt"
+      "key": "./certs/server.key",
+      "cert": "./certs/server.crt"
     },
     "watch": true,
     "files": "*.*",
     "open": false
-}
+  }
