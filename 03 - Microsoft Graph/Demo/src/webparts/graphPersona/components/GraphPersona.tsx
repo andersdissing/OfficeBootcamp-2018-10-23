@@ -12,6 +12,7 @@ import {
   Persona,
   PersonaSize
 } from 'office-ui-fabric-react/lib/components/Persona';
+import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
 import { Link } from 'office-ui-fabric-react/lib/components/Link';
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 initializeIcons();
@@ -70,7 +71,7 @@ export default class GraphPersona extends React.Component<IGraphPersonaProps, IG
                 onRenderTertiaryText={this._renderPhone}
                 imageUrl={this.state.image}
                 size={PersonaSize.size100} />
-        <button onClick={() => this.setState({name: "Per Jakobsen"})} >Beautify name</button>        
+        <PrimaryButton onClick={() => this.setState({name: "Per Jakobsen"})} text="Beautify name" />
       </div>
     );
   }

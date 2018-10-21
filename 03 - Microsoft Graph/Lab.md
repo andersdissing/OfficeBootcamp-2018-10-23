@@ -733,7 +733,7 @@ In this exercise you'll implement a simple Unit test of the react part of the we
 ### TDD - Test Drive Development
 1. Add the following test of new important functionality:
     ```ts
-    it("Should possible to beautify name", async () => {
+    it("Should be possible to beautify name", async () => {
       const element = reactComponent.find('.ms-Persona-primaryText');
       expect(element.length).toBeGreaterThan(0);
       expect(element.text()).toEqual("");
@@ -754,7 +754,11 @@ In this exercise you'll implement a simple Unit test of the react part of the we
 2. Verify that the last test fails
 3. Implement the missing functionality
     1. Open **src\webparts\graphPersona\components\GraphPersona.tsx**
-    2. Change the **render** method to the following:
+    2. Add the following import:
+        ```ts
+        import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
+        ```
+    3. Change the **render** method to the following:
         ```ts
         public render(): React.ReactElement<IGraphPersonaProps> {
             return (
@@ -766,7 +770,7 @@ In this exercise you'll implement a simple Unit test of the react part of the we
                             onRenderTertiaryText={this._renderPhone}
                             imageUrl={this.state.image}
                             size={PersonaSize.size100} />
-                    <button onClick={() => this.setState({name: "Per Jakobsen"})} >Beautify name</button>        
+                    <PrimaryButton onClick={() => this.setState({name: "Per Jakobsen"})} text="Beautify name" />
                 </div>
             );
         }

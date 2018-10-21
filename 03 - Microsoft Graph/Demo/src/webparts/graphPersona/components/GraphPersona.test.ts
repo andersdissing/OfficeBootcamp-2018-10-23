@@ -57,7 +57,7 @@ describe("GraphPersona", () => {
       await reactComponent.update();
       expect(element.text()).toEqual("Megan Bowen");
     });
-    it("Should possible to beautify name", async () => {
+    it("Should be possible to beautify name", async () => {
       const element = reactComponent.find('.ms-Persona-primaryText');
       expect(element.length).toBeGreaterThan(0);
       expect(element.text()).toEqual("");
